@@ -1,0 +1,140 @@
+header {
+    background-color :lightcoral;
+    height :100px;
+    width :100%;
+    
+}
+
+.header-left{
+    float :left;
+    margin-top :10px;
+    margin-left :20px;
+    
+}
+
+.header-left a{
+    color:white;
+    text-decoration: none;
+}
+
+.header-right {
+    float :right;
+    color :white;
+    margin-top :39px
+    
+    
+
+}
+.header-right a{
+    color :white;
+    text-decoration: none;
+    
+
+}
+
+.header-right ul{
+    list-style: none;
+    display: inline;
+    font-size :12px;
+
+}
+.header-right li{
+    display: inline;
+    margin: 0px 8px 0px 8px;
+    
+}
+
+.card {
+    background-color :beige;
+    width:80%;
+    margin :10px auto;
+
+}
+.title-box {
+    margin-left: 10px
+}
+
+.action-area ul {
+    list-style: none;
+    float :right;
+    color :red;
+    margin-top:0px
+    
+}
+.action-area li {
+    display: inline;
+}
+.action-area a {
+    color:black
+}
+
+.text-box{
+  padding:0px 10px 0px 10px;  
+} 
+
+
+
+.action-area {
+    margin-right :10px
+}
+
+.content textarea {
+    display :block;
+    width :90%;
+    margin:20px auto;
+}
+
+
+.whole {
+ 
+    width :100%;
+    margin :-20px auto;
+    height :600px;
+    background-color: beige
+}
+
+
+.content h1{
+    padding :20px 0px 0px 40px
+}
+
+.title {
+    display:block;
+    height :50px;
+    width :45%;
+    margin:0 auto;
+    font-size :24px;
+    text-align: center;
+}
+
+.submit {
+    display :block;
+    width:auto;
+    margin: 0 auto;
+}
+
+
+.new-create {
+    background-color: lightcoral;
+    font-size :20px;
+    border-radius: 4px;
+    width :15%;
+    text-align: center;
+    margin :10px auto;
+    cursor :pointer;
+    padding: 5px 5px;
+    
+}
+
+
+.new-create a {
+        color :white;
+
+text-decoration: none;  
+display: block;
+}
+
+.info {
+    display :inline-block;
+ 
+}

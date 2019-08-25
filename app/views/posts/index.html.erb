@@ -1,1 +1,39 @@
-<p>HELLO</p>
+<div class="row">
+  
+    <div class ="new-create">
+      <a href="posts/new">新規作成</a>
+    </div>
+  
+    <% @posts.each do |post| %>
+    <div class="card">
+        <div class="title-box">
+            <h2 class="info"><%= post.title %></h2>
+            <h6 class="info"><%= post.user.nickname %>さんの投稿</h6>
+        </div>
+        <div class="text-box">
+            <P><%= post.text %></P>
+        </div>
+        
+
+                　<div class="action-area">
+                　<ul>
+                　 
+                　    <% if user_signed_in? && current_user.id == post.user_id %>
+                      <%= link_to '編集', "/posts/#{post.id}/edit", method: :get%>
+                      <%= link_to '削除', "/posts/#{post.id}", method: :delete%>
+                      <% end %>
+                  
+                  
+                  </ul>
+                  </div>
+        </div>
+        <% end %>
+
+    
+    
+    </div>
+    
+
+ <%= paginate(@posts) %>
+ 
+ </div>
